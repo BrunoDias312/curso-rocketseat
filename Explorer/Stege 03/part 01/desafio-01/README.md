@@ -17,7 +17,8 @@ Você pode visualizar e interagir com a pagina do projeto <a href="https://stage
 
 <p align="center">
   Versão deskotp:<br>
-  <img alt="License" src="https://imgur.com/a/h9mAVnz" width="70%" display="flex" gap="5px" ><br>
+  <img alt="License" src="[https://imgur.com/a/h9mAVnz](https://thumbs2.imgbox.com/ab/06/9xs4hAh2_t.png)" width="70%" display="flex" gap="5px" ><br>
+  
 </p>
 
 ## 🚀 Tecnologias
