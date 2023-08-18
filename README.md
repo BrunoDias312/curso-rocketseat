@@ -33,8 +33,8 @@ Tecnologias apreendidas nesse curso:
 
 <p>Projetos e desafios em HTML e CSS desenvolvidos no curso</p>
 
-- [Stage 03 - Desafio 01](https://stage03-desafio01.vercel.app/)
-- [Stage 03 - Desafio 02](https://stage03-desafio02.vercel.app/)
+- [Stage 03 - Desafio 01](https://github.com/BrunoDias312/curso-rocketseat/tree/main/Explorer/Stege%2003/part%2001/desafio-01)
+- [Stage 03 - Desafio 02](https://github.com/BrunoDias312/curso-rocketseat/tree/main/Explorer/Stege%2003/part%2001/desafio-02)
 
 
 ## :memo: Licença
