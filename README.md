@@ -35,6 +35,7 @@ Tecnologias apreendidas nesse curso:
 
 - [Stage 03 - Desafio 01](https://github.com/BrunoDias312/curso-rocketseat/tree/main/Explorer/Stege%2003/part%2001/desafio-01)
 - [Stage 03 - Desafio 02](https://github.com/BrunoDias312/curso-rocketseat/tree/main/Explorer/Stege%2003/part%2001/desafio-02)
+- [Stage 03 - AulaForm](https://github.com/BrunoDias312/curso-rocketseat/tree/main/Explorer/Stege%2003/part%2001/docs)
 
 
 ## :memo: Licença
