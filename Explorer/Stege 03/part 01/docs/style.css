@@ -1,0 +1,219 @@
+/* font-family: 'Archivo', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-weight: 400;
+    font-size: 16px;
+    background: #D9D9D9;
+}
+
+body,
+input,
+button,
+select,
+textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+    content: '';
+    width: 100%;
+    height: 362px;
+    background-color: #121212;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header h1 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: white;
+}
+
+header p {
+    color: #42D3FF;
+    font-family: 'Poppins';
+    line-height: 26px;
+}
+
+#page {
+    width: 736px;
+    margin: auto;
+}
+
+header {
+    width: 319px;
+    margin-top: 74px;
+}
+
+form {
+    border-radius: 8px 8px 0px 0px;
+    background: #FAFAFC;
+    min-height: 300px;
+    margin-top: 38px;
+    padding: 64px;
+    gap: 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+}
+
+.fieldset-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+fieldset legend {
+    color: #32264D;
+    font-family: 'Archivo', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    width: 100%;
+    border-bottom: 1px solid #E6D6F0;
+    padding-bottom: 16px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label,
+.checkbox-wrapper label {
+    color: #4E4958;
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+    margin-left: 12px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #6c6a71;
+}
+
+.input-wrapper input, 
+.input-wrapper textarea,
+.input-wrapper select {
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    background: #fafafc;
+    border-radius: 8px;
+    height: 56px;
+    padding: 24px;
+
+    color: #6c6a71;
+    font-size: 16px;
+    line-height: 26px;
+    resize: none;
+}
+
+.input-wrapper textarea {
+    height: 168px;
+    padding: 0px;
+}
+
+.input-wrapper select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 24px top 50%;
+}
+
+.col-3{
+    display: flex;
+    gap: 20px;
+}
+
+.col-3 > div:nth-child(1) {
+    width: 100%;
+}
+
+.checkbox-wrapper {
+    position: relative;
+}
+
+.checkbox-wrapper label {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.checkbox-wrapper input {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    opacity: 0;
+
+}
+
+.checkbox-wrapper label::before{
+    content: '';
+    height: 24px;
+    width: 24px;
+    display: block;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cg clip-path='url(%23clip0_2116_23)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2116_23'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+
+}
+
+.checkbox-wrapper input:focus + label::before{
+    outline: 2px solid black
+}
+
+footer {
+    background: #F0F0F4;
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 64px;
+    margin-bottom: 100px;
+    border-radius: 0 0 8px 8px;
+    border-top: 1px solid #d6d6d6;
+}
+
+footer .button {
+    height: 56px;
+    background-color: #04D361;
+    border: 0;
+    border-radius: 8px;
+    font-family: 'Arquivo';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+}
+
+footer .button:hover {
+    background-color: #0f9e4f;
+}
+
+input:invalid {
+    border: 2px solid red
+}
