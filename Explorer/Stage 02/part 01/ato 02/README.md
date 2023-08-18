@@ -17,7 +17,7 @@ Você pode visualizar e interagir com a pagina do projeto <a href="" target="_bl
 
 <p align="center">
   Versão deskotp:<br>
-  <img alt="License" src="https://thumbs2.imgbox.com/d2/2a/lMEZTz1y_t.png" width="70%" display="flex" gap="5px" ><br>
+  <img alt="License" src="https://thumbs2.imgbox.com/16/01/KNashS2e_t.png" width="70%" display="flex" gap="5px" ><br>
 </p>
 
 ## 🚀 Tecnologias
