@@ -12,7 +12,7 @@ Aluno: Bruno Dias<br>
 </p>
 
 <p align="center">
-Você pode visualizar e interagir com a pagina do projeto <a href="https://stage03-desafio01.vercel.app/" target="_blank">clicando aqui </a>
+Você pode visualizar e interagir com a pagina do projeto <a href="https://stage03-desafio02.vercel.app/" target="_blank">clicando aqui </a>
 </p>
 
 <p align="center">
