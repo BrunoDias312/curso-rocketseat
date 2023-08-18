@@ -33,10 +33,9 @@ Tecnologias apreendidas nesse curso:
 
 <p>Projetos e desafios em HTML e CSS desenvolvidos no curso</p>
 
-- [Projeto 01]()
-- [Desafio - Recriando Layout 01]()
-- [Projeto 02]()
-- [Desafio - Recriando Layout 02]()
+- [Stage 03 - Desafio 01](https://stage03-desafio01.vercel.app/)
+- [Stage 03 - Desafio 02](https://stage03-desafio02.vercel.app/)
+
 
 ## :memo: Licença
 
