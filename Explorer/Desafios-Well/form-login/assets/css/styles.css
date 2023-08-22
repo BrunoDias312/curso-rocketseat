@@ -210,6 +210,10 @@ a {
     color: #FFC632;
 }
 
+.area-image img{
+    display: none;
+}
+
 
 
 @media(min-width: 1000px) {
@@ -235,7 +239,7 @@ a {
     }
 
     .area-1 {
-        margin-right: 74px;
+        width: 50%;
         padding-top: 41px
     }
 
@@ -245,12 +249,19 @@ a {
     }
 
     .area-image {
-        background-image: url("/Desafios-Well/form-login/assets/images/side-image.jpg");
+        /* background-image: url("/Desafios-Well/form-login/assets/images/side-image.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: left;
-        width: 50%;
-        height: 100%;
+        background-position: bottom;
+        width: 100%;
+        height: 100%; */
+        margin-left: 72px;
+    }
+    .area-image img{
+        height: calc(100vh - 9px);
+        width: 100%;
+        min-width: 720px;
+        display: block;
     }
 }
 @media(max-width: 1300px) {
