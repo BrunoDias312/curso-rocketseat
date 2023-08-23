@@ -1,0 +1,222 @@
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    background: #F9FBFC;
+    padding-bottom: 50px;
+}
+
+body::before {
+    content: '';
+    height: 50vh;
+    width: 100%;
+    background-color: var(--blue);
+    display: block;
+    position: relative;
+    top: 0;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
+
+.page h1,
+.page p {
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.area-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1130px;
+    margin: auto;
+}
+
+.cards {
+    max-width: 355px;
+    background-color: var(--page-background);
+    box-shadow: 0px 1px 2px 0px rgba(142, 150, 185, 0.25);
+    border-radius: 8px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.area-card {
+    padding: 20px 30px 30px;
+    height: calc(100% - 45px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h3 {
+    padding: 20px 0 0 30px;
+    margin: 0;
+    height: 73px;
+}
+
+.cards h2,
+.cards h3 {
+    color: #1E2338;
+}
+
+.cards h2 {
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.cards h2 span {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.cards h2 span:first-child {
+    color: #000;
+    font-weight: 700;
+}
+
+.cards h2 span:last-child {
+    color: #828799;
+}
+
+.cards p {
+    text-align: start;
+    color: #828799;
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.promo:nth-child(1) {
+    border-top: 3px solid red;
+}
+
+.promo {
+    display: flex;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.area-card > button {
+    width: 296px;
+    border-radius: 10px;
+    border: 1px solid #1D539E;
+    background-color: #fff;
+    height: 49px;
+    text-transform: uppercase;
+    color: #1D539E;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-top: 80px;
+}
+
+hr {
+    background: #EEE;
+    margin: 20px 0;
+}
+
+.area-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cards:nth-child(2)::before {
+    content: '';
+    border-radius: 8px 8px 0px 0px;
+    background: #FFCC29;
+    box-shadow: 0px 1px 2px 0px rgba(142, 150, 185, 0.25);
+    position: relative;
+    top: 0;
+    height: 76px;
+    width: 100%;
+    display: block;
+}
+.cards:nth-child(2) .area-card{
+    height: 430px;
+}
+.card-area-top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-area-top h3 {
+    color: #1D539E;
+    font-weight: 600;
+    font-size: 2.0rem;
+}
+
+.button-pop {
+    display: flex;
+    align-items: center;
+    padding: 14px 24px;
+    background: #1D539E;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    height: 16px;
+    color: #fff;
+    margin: 22px 22px 0 0;
+    border: none;
+}
+
+.button-assign {
+    background-color: #1D539E !important;
+    color: white !important;
+    margin-top: 47px !important;
+}
+.button-last {
+    margin-top: 47px !important;
+}
+
+.promo-card{
+    height: 490px !important;
+}
+@media(min-width: 1080px) {
+    body::before{
+        height: 450px;
+    }
+    .area-cards {
+        flex-direction: row;
+    }
+    .cards {
+        height: 470px;
+    }
+
+    .page {
+        margin-top: 100px;
+    }
+    .page > h1{
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .page > p {
+        margin-bottom: 100px;
+    }
+}

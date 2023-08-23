@@ -1,0 +1,269 @@
+:root {
+    font-size: 62.5%;
+    --brand-dark: hsl(195, 91%, 25%);
+    --platform-background: hsl(240, 5%, 7%);
+    --plataform-main: hsl(240, 6%, 13%);
+    --color-gray-100: hsl(196, 100%, 98%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-white-20: hsla(0, 0%, 100%, 0.2);
+    --color-blue-ocean: hsl(195, 46%, 40%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.6rem;
+}
+
+#page {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+}
+
+.container {
+    width: min(1216px, 100%);
+    height: 100%;
+    margin: auto;
+}
+
+/* Header e nav */
+
+header {
+    background-color: var(--brand-dark);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 12px 28px;
+    gap: 26px
+}
+
+.img-logo {
+    border-radius: 100%;
+    width: max-content;
+    padding: 8px;
+    background-color: var(--color-white);
+}
+
+form {
+    flex: 1;
+}
+
+#search {
+    padding: 12px 16px 12px 14px;
+    border: none;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.20);
+    width: 100%;
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+#search::placeholder {
+    color: var(--color-white);
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+#search:focus {
+    outline: 2px solid var(--color-white);
+}
+
+.img-user img {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+/* main */
+
+.content {
+    display: grid;
+    grid-template-rows: max-content max-content;
+}
+
+main {
+    margin-bottom: 34px;
+}
+
+.hero img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.area-title {
+    margin: 8px 0 3.1rem 2.2rem;
+}
+
+main h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.9rem;
+    color: var(--plataform-main)
+}
+
+.area-like {
+    display: flex;
+    gap: 12px;
+}
+
+.area-like button {
+    padding: 12px;
+    background-color: var(--brand-dark);
+    border: none;
+    border-radius: 100%;
+}
+
+main p,
+aside {
+    margin: 0 22px;
+}
+
+main p {
+    line-height: 2.6rem;
+    color: var(--plataform-main);
+}
+
+/* aside */
+
+aside {
+    display: flex;
+    flex-direction: column;
+    max-width: 384px;
+    gap: 32px;
+    margin: auto;
+}
+
+aside h3 {
+    color: var(--plataform-main);
+    font-weight: 700;
+
+}
+
+aside>h3 {
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+}
+
+.card {
+    display: flex;
+    gap: 16px;
+    height: 84px;
+}
+
+.card img {
+    width: 151px;
+    height: 84px;
+    border-radius: 5px;
+    aspect-ratio: 16/9;
+    filter: brightness(lightgray);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    height: 18px;
+}
+
+.card-content p {
+    color: var(--platform-background);
+    font-size: 1.3rem;
+    line-height: 2rem;
+    height: 54px;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--color-blue-ocean);
+    padding: 16px;
+    color: var(--color-white);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 41px;
+}
+
+/* Animação */
+
+.card,
+.hero img {
+    --card-delay: .3s;
+    /* animation: appear .4s var(--card-delay) both; */
+    animation-name: appear;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-delay: var(--card-delay);
+}
+
+.card img:hover {
+    /* filter: hue-rotate(7deg) contrast(180%) saturate(100%); */
+    transition: all 1.5s ease-out;
+    rotate: 2deg;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media */
+
+@media(min-width: 1100px) {
+    nav {
+        padding: 12px 0;
+    }
+
+    .content {
+        grid-template-columns: 68% 30%;
+        column-gap: 34px;
+        margin-top: 44px;
+    }
+
+    .area-title {
+        display: flex;
+        justify-content: space-between;
+        margin: 32px 0;
+    }
+
+    main p,
+    aside {
+        margin: 0;
+    }
+
+    .hero img {
+        border-radius: 5px;
+    }
+}
