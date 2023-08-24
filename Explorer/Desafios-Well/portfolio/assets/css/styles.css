@@ -1,0 +1,154 @@
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+    --color-green: #0F0;
+    --color-black: #000;
+    font-size: 62.5%;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Merriweather Sans', sans-serif;
+    padding: 40px;
+    margin: 0;
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+#page {
+    display: grid;
+    grid-template-columns: 348px 1fr;
+    min-height: 100vh;
+    column-gap: 60px;
+}
+
+
+.left-page {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.card {
+    background-color: var(--bg-cards);
+    width: 100%;
+    border-radius: 20px;
+    padding: 30px 40px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+}
+
+.card-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 49px;
+}
+
+.card-user img {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 2px solid var(--color-green);
+    margin-bottom: 3rem;
+}
+
+.card-user h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card-user p {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+/* cards restantes */
+
+a {
+    color: var(--text-color);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.all-cards {
+    text-align: start;
+}
+
+.all-cards ul {
+    /* list-style: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+
+}
+
+.all-cards h2 {
+    margin-bottom: 20px;
+}
+
+a,
+.all-cards li{
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+   gap: 20px;
+}
+
+.all-cards:nth-child(3) {
+    padding: 40px 20px;
+}
+
+.all-cards:nth-child(3) ul {
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    padding: 0 20px;
+}
+.all-cards:nth-child(3) li {
+    padding: 6px 10px;
+    background-color: var(--bg-techs);
+    color: var(--color-black);
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.all-cards ul li span {
+    font-weight: 700;
+}
+
+.alt {
+    padding: 40px 20px;
+}
+
+.alt ul {
+    padding-left: 20px;
+}
+.alt li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    display: list-item;
+    margin-left: 10px;
+}
+
+.alt li span{ 
+    font-size: 1.4rem;
+    font-weight: 700;
+}
