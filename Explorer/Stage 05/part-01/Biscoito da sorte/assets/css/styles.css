@@ -158,6 +158,6 @@ button {
     }
 
     to {
-        transform: translateY(0%) scale(1.2)
+        transform: translateY(0%) scale(1.2);
     }
 }
