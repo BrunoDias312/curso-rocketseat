@@ -31,4 +31,8 @@ Landpage basica com animações.
 
 Esse projeto está sob a licença MIT.
 
+<<<<<<< HEAD:Explorer/Stage 05/part-01/Biscoito da sorte/README.md
 ---
+=======
+---
+>>>>>>> refs/remotes/origin/main:Explorer/Stage 05/part 01/Biscoito da sorte/README.md
