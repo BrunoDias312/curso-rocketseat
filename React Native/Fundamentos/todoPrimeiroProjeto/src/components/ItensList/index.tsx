@@ -37,7 +37,7 @@ export const ListTask = (dataList: Props) => {
                     : <Text style={styles.label}>{item.title}</Text>
             }
             <TouchableOpacity onPress={() => handleRemoveTask(index)}>
-                <Image source={require('../../assets/imgs/layer.svg')} style={styles.imgAddButton} />
+                <Image source={require('../../assets/imgs/layer.png')} style={styles.imgAddButton} />
                 {/* <Layer/> */}
             </TouchableOpacity>
         </View>

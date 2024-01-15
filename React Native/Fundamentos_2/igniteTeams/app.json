@@ -1,15 +1,18 @@
 {
   "expo": {
-    "name": "todoPrimeiroProjeto",
-    "slug": "todoPrimeiroProjeto",
+    "name": "igniteTeams",
+    "slug": "igniteTeams",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "dark",
+    "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splashEditedTransparent.png",
       "resizeMode": "contain",
       "backgroundColor": "#000000"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [
       "**/*"
@@ -20,17 +23,21 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#000"
-      },
-      "package": "com.days312.todoPrimeiroProjeto"
+        "backgroundColor": "#FFFFFF"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "extra": {
-      "eas": {
-        "projectId": "c48be38e-2a41-42ac-8384-c4b339567d5d"
-      }
+    "packageOpts": {
+      "config": "metro.config.js",
+      "sourceExts": [
+        "js",
+        "jsx",
+        "ts",
+        "tsx",
+        "svg"
+      ]
     }
   }
 }

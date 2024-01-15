@@ -20,6 +20,9 @@ export const Home = () => {
         if(taskExists){
             return alert('Esta tarefa ja existe')
         }
+        if(nameTask === '' || nameTask === null) {
+            return alert('Coloque um nome a tarefa')
+        }
         setTask([{ title: nameTask }, ...task])
         setNameTask('')
         return console.log(`${task}`)
