@@ -24,9 +24,6 @@
       ],
       "@utils/*": [
         "./src/utils/*"
-      ],
-      "@icons/*": [
-        "./src/assets/icons/*"
       ]
     }
   }
