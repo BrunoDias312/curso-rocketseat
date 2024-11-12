@@ -1,0 +1,6 @@
+/venv
+/.venv
+/node_modules
+/migrations
+.idea
+.DS_Store
