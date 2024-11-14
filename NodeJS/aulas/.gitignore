@@ -1,6 +1,12 @@
-/venv
-/.venv
-/node_modules
-/migrations
-.idea
-.DS_Store
+#dependencias
+node_modules
+
+# Database
+db/*.db
+
+# Enviroments
+.env
+.env.test
+
+# Buils
+build
